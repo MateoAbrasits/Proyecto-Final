@@ -1,0 +1,40 @@
+.formBootstrap{
+    color: black;
+    font-weight: bold;
+}
+
+
+.contacto-footer{
+    background-color: black;
+    height: 60px;
+    
+    
+}
+.mainContacto{
+    width: 80%;
+    margin: auto;
+    .iframeContacto{
+        
+        top: 0%;
+        width: 100%;
+        min-height: 100vh;
+
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+    main{
+        width: 100%;
+        
+
+        .iframeContacto{
+            margin-top: 70px;
+        }
+    }
+    
+}
+
+
+
+

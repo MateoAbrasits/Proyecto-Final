@@ -1,0 +1,154 @@
+
+
+
+main{
+    .contenedor-titulo{
+        margin: auto;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+        
+
+        .titulo{
+            background-color: rgb(0, 153, 255);
+            padding-top: 40px;
+            padding-bottom: 40px;
+            h1{
+                
+                width: 80%;
+                margin:auto;
+                text-align: center;
+                font-size: 2rem;
+                color: black;
+                font-family: 'Mochiy Pop P One', sans-serif;
+
+                
+                
+            }
+        }
+
+    }
+
+    
+
+    .artistas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+        .contenedor-setitoff{
+            width: 100%;
+            .artista-setitoff{
+                
+                background-color: yellow;
+            }
+        }
+
+        .contenedor-royalrepublic{
+            background-color:#ff0080ff;
+        }
+
+        
+
+        
+        div{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            
+
+            a{
+
+                margin: 30px;
+                font-size: 30px;
+                color: black;
+                text-decoration: none;
+                font-family: 'Mochiy Pop P One', sans-serif;
+                font-weight: bold;
+                transition: 1s;
+
+                &:hover{
+                    transform: scale(1.15);
+                        transition: 1s ;
+                        color: rgb(29, 29, 255);
+                }
+
+                img{
+                    width: 60%;
+                    border: black solid 5px;
+                    border-radius: 10%;
+                    transition: 0.5s;
+                    display: block;
+                    margin: auto;
+    
+                    &:hover{
+                        transform: scale(1);
+                        transition: 1s ;
+                        
+                    }
+                }
+
+                
+            }
+        }
+    }
+
+}
+
+.indexfooter{
+    
+    h2{
+        padding: 30px;
+        color: white;
+        text-align: center;
+        background-color: black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+
+
+    
+
+    .indexfooter{
+        margin-top: 50px;
+    }
+
+    main{
+
+        
+
+        overflow: hidden;
+        .contenedor-titulo{
+           height: auto;
+            .titulo{
+                h1{
+                    padding-top:auto;
+                    padding-bottom:auto;
+                    margin-top: 60px;
+
+                    
+                }
+            }
+    
+        }
+    
+        
+
+        
+    
+    }
+    
+    
+    
+}

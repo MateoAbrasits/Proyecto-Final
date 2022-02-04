@@ -1,0 +1,17 @@
+@mixin titulos ($Talign:center, $Tftsize:2rem, $margin:50px) {
+    text-align: $Talign;
+    font-size: $Tftsize;
+    margin: $margin;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+@mixin parrafos ($Talign:left, $Fsize:25px, $Fweight:bold, $Margin:20px) {
+            text-align: $Talign;
+            font-size: $Fsize;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: $Fweight;
+            margin: $Margin;
+    
+    
+}
+

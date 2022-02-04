@@ -1,0 +1,261 @@
+
+    
+    
+    #desplazar{
+        display: none;
+        
+         &:checked ~ .submenu{
+            height: 115px;
+            transition: 0.75s;
+            }
+
+
+    
+        
+        
+    }
+
+    
+    
+    .submenu{
+        text-decoration: none;
+        height: 0px;
+        overflow: hidden;
+        transition: 0.75s;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    
+    }
+    .contMenuFP{
+        .imgMenuH{
+            display: none;
+        }
+    }
+    
+    
+    .contMenu{
+        font-family: 'Staatliches', cursive;
+        position: fixed;
+        top: 0%;
+        float: left;
+        width:250px;
+        height: 100vh;
+        background-color: rgb(75, 0, 110);
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        transform:translateX(-190px);
+        transition: 1s;
+        border-right: solid rgb(0, 0, 0) 5px;
+        border-bottom: 0px;
+        z-index: 3;
+        
+    
+        &:hover{
+            transform:translateX(0);
+            transition: 1s;
+        }
+    
+    
+        .contMenuHamburguesa{
+            width: 100%;
+            margin-right: auto;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: flex-end;
+            
+    
+            h2{
+                font-size: 2.6rem;
+                margin-bottom: 40px;
+                margin-top: 40px;
+                text-align: center;
+                color: rgb(255, 255, 255);
+                margin-right: 50px;
+
+                
+                
+            }
+
+            .imgMenuH2{
+                width: 40px;
+                height: 40px;
+                margin: 7px;
+            }
+
+
+            .menuPadre{
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+
+            
+            }
+        
+            
+        }
+        
+    
+        li{
+            list-style: none;
+            font-size: 30px;
+            margin: 10px;
+            transition: 0.75s;
+
+            
+    
+            
+    
+            
+    
+            a{
+                font-size: 20px;
+                text-decoration: none;
+                color: white;
+                display: block;
+                
+                
+                
+    
+        
+              
+                
+            }
+
+            
+    
+            ul{
+                li{
+    
+                    display: flex;
+                    align-items: flex-start;
+    
+                    
+                    .hijosubmenu{
+                        font-size:17px;
+                        overflow: hidden;
+                        display: block;
+                        padding: 10px;
+                        width: 150px;
+    
+                        &:hover{
+                            background-color:rgb(121, 0, 177); 
+                        }
+                       
+                    }
+                }
+            }
+    
+        }
+    
+        .itemMenu{
+            transition: 0.75s;
+            display: block;
+            padding: 10px;
+
+            
+            
+    
+           
+      
+    
+        
+        
+        &:hover{
+            background-color: rgb(121, 0, 177);
+            transition: 0.75s;
+
+
+            
+        }
+
+        
+
+    }
+
+
+    .contDesplazar{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+    }
+    }
+
+    @media only screen and (max-width:1000px) {
+
+        .imgMenuH{
+            display: none;
+        }
+
+
+       .contMenuFP{
+            z-index: 5;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            background-color: rgb(75, 0, 110);
+            display: flex;
+            flex-direction: row-reverse;
+            
+        .imgMenuH{
+            display: block;
+            width: 50px;
+            height: 50px;
+            margin:10px ;
+            padding: 5px;
+
+
+   
+        }
+
+       }
+
+       
+
+       .contMenuFP:hover ~ .contMenu{
+        transform: translate(0px);
+        
+
+    }
+
+    
+    .contMenu{
+        transform: translate(-200px);
+        z-index: 5;
+        border: 0px;
+    }
+
+
+
+
+    .contMenu{
+        width: 200px;
+    }    
+.contMenuHamburguesa{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+
+
+            .imgMenuH2{
+                display: none;
+            }
+            h2{
+                margin-right: auto;
+            }
+           
+
+    
+}
+
+}
+    
+
+
+
+
+
+    
